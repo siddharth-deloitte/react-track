@@ -1,0 +1,21 @@
+You are given an object literal representing a part of your musical album collection. Each album has a unique id number as its key and several other properties. Not all albums have complete information.
+(The collection is in the albums.ts file)
+
+You start with an "updateRecords" function that takes an 
+- "RecordCollection" object (which contains the musical album collection),
+- an id of "Number" type,
+- a prop (like artist or tracks), and 
+- a value "string" or "number". 
+Complete the function using the rules below to modify the object passed to the function.
+
+Your function must always return the entire record collection object.
+If prop isn't "tracks" and value isn't an empty string, update or set that album's prop to value.
+
+If prop is "tracks" and value isn't an empty string, add value to the end of the album's existing tracks array.
+
+Example
+If updateRecords is called with parameters 
+updateRecords(recordCollection, 5439, "artist", "Sonu")
+"artist" field in the 5439 record should be the string "Sonu"
+
+As this is a Typescript assignment all the parameters are required to have types and avoid using "any"
